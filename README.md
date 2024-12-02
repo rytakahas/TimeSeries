@@ -31,4 +31,3 @@ The workflow includes data preprocessing, model training, hyperparameter optimiz
 4. **Deliverables**
     - SARIMAX, and XGBoost trained models were saved to 'pkl'
     files, and LSTM to 'keras' for reproducing test results
-"""
