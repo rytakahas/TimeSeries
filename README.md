@@ -1,7 +1,7 @@
-### Objective: Time Series Regression for Power Consumption Forecasting
+### Objective: Time Series Regression for Population
 
 This project implements time series regression techniques for forecasting <br>
-power consumption using three different models: **SARIMAX**, **XGBoost**, and **LSTM** <br>
+population using three different models: **SARIMAX**, **XGBoost**, and **LSTM** <br>
 
 The workflow includes data preprocessing, model training, hyperparameter optimization, <br>
  evaluation, and visualization of the results.
@@ -15,7 +15,7 @@ The workflow includes data preprocessing, model training, hyperparameter optimiz
 <br>
 
 1. **Data Preparation**
-    - Load the household power consumption dataset.
+    - Load the population dataset.
     - Analyze seasonality and stationarity of the time series data.
     - Split the dataset into training and testing sets.
 
@@ -25,9 +25,9 @@ The workflow includes data preprocessing, model training, hyperparameter optimiz
     - Trained with SARIMAX, XGBoost (optuna), and LSTM 
 
 3. **Evaluation**
-    - Evaluate MSE, MAE, and R2
+    - Evaluate MSE (Normalized MSE), MAE (Normalized MAE), and R2
     - Visualized the prediction results
 
 4. **Deliverables**
-    - SARIMAX, and XGBoost trained models were saved to 'pkl'
-    files, and LSTM to 'keras' for reproducing test results
+    - SARIMAX, and XGBoost trained models were saved to 'pkl' files, <br> 
+    and LSTM to 'keras' for reproducing test results.
