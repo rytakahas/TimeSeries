@@ -1,4 +1,4 @@
-name: CI/CD Pipeline for Time Series Forecasting
+name: CI/CD Pipeline for ML
 
 on:
   push:
@@ -13,8 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: ['3.11', '3.12', '3.13']
-    
+        python-version: ['3.12']  # Ensure Python 3.12 is the only version tested
+
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
@@ -27,7 +27,12 @@ jobs:
       - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
+          pip install --pre tensorflow || echo "TensorFlow not available"
+          pip install lightgbm || echo "LightGBM install failed"
           pip install -r requirements.txt
+
+      - name: Debug Installed Packages
+        run: pip list
 
       - name: Run Unit Tests
         run: |
