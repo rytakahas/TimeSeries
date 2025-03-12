@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: ['3.12']  # ✅ Use stable Python version
+        python-version: ['3.10']  # ✅ Use stable Python version
 
     steps:
       - name: Clear Cache
