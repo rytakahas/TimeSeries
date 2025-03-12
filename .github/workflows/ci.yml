@@ -30,6 +30,7 @@ jobs:
           pip install --pre tensorflow || echo "TensorFlow not available"
           pip install lightgbm || echo "LightGBM install failed"
           pip install -r requirements.txt
+	  pip install pytest
 
       - name: Debug Installed Packages
         run: pip list
