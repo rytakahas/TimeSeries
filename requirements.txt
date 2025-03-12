@@ -9,4 +9,3 @@ optuna==4.0.0
 tensorflow==2.18.0
 joblib==1.4.2
 pytest==7.4.2
-unittest
